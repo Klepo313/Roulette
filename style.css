@@ -6,3 +6,6 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+body {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(15, 60, 25, 0.8) 0%, rgba(15, 60, 25, 0.9) 100%);
+}
