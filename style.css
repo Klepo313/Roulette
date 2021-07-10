@@ -1,13 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+
 *{
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     /*font-family: 'Port Lligat Slab', serif;*/
+    color: #1f1f1f;
 }
 body{
-    background:rgba(15, 60, 25, 1);
+    background: #f0f0f0;;
+}
+h1{
+    position: relative;
+    text-align: center;
+    font-size: 3.5em;
+    letter-spacing: 2px;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+input{
+    width: 250px;
+    padding: 5px;
+    border-radius: 3px;
+}
+form{
+    display: flex;
+}
+
+.divKredit{
+    font-size: 25px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    right: 50px;
+    text-align: left;
+}
+#kreditCifra{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: seagreen;
+}
+.mainContainer1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.unosParametara, .ispisParametara{
+    display: grid;
+}
+#sibniBtn{
+    margin-top: 50px;
+    background-color: seagreen;
+    width: 250px;
+    padding: 5px;
+    color: white;
+    font-size: 20px ;
+    outline: none;
+    border: none;
+    border-right: 4px solid rgb(33, 104, 64);
+    border-radius: 3px;
+}
+#sibniBtn:hover{
+    cursor: pointer;
+    background-color: rgb(33, 104, 64);
+    border-right: 3px solid rgb(21, 66, 41);
+}
+.mainContainer2{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-left: 3px solid seagreen;
+}
+.ispisParametara{
+    width: 60%;
+    grid-template-columns: auto auto;
+}
+
+.ispisi{
+    position: relative;
+    color: seagreen;
+    font-size: 19px ;
+    font-weight: bold;
 }

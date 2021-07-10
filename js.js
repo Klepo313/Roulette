@@ -15,10 +15,10 @@ request.onload = ()=> {
 }
 */
 
-var konzola = document.getElementById("upisKonzole").innerHTML = '001';
-var brojIgre = document.querySelector("idIgre");
-var pozicija = document.querySelector("upisPozicija");
-var ulog = document.querySelector("upisUloga");
+var konzola = document.getElementById("upisKonzole").value;
+var brojIgre = document.getElementById("idIgre");
+var pozicija = document.getElementById("upisPozicija");
+var ulog = document.getElementById("upisUloga");
 
 var ispis
 

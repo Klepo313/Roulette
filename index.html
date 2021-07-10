@@ -1,92 +1,81 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Port+Lligat+Slab&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rulet</title>
+</head>
 
-*{
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    /*font-family: 'Port Lligat Slab', serif;*/
-    color: #1f1f1f;
-}
-body{
-    background: #f0f0f0;;
-}
-h1{
-    position: relative;
-    text-align: center;
-    font-size: 3.5em;
-    letter-spacing: 2px;
-}
-main{
-    height: 100%;
-    width: 100%;
-}
-input{
-    width: 250px;
-    padding: 5px;
-    border-radius: 3px;
-}
-form{
-    display: flex;
-}
 
-.divKredit{
-    font-size: 25px;
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    right: 50px;
-    text-align: left;
-}
-#kreditCifra{
-    font-size: 1.5em;
-    font-weight: bold;
-    color: seagreen;
-}
-.mainContainer1{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.unosParametara, .ispisParametara{
-    display: grid;
-}
-#sibniBtn{
-    margin-top: 50px;
-    background-color: seagreen;
-    width: 250px;
-    padding: 5px;
-    color: white;
-    font-size: 20px ;
-    outline: none;
-    border: none;
-    border-right: 4px solid rgb(33, 104, 64);
-    border-radius: 3px;
-}
-#sibniBtn:hover{
-    cursor: pointer;
-    background-color: rgb(33, 104, 64);
-    border-right: 3px solid rgb(21, 66, 41);
-}
-.mainContainer2{
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 3px solid seagreen;
-}
-.ispisParametara{
-    width: 60%;
-    grid-template-columns: auto auto;
-}
+<body>
 
-.ispisi{
-    position: relative;
-    color: seagreen;
-    font-size: 19px ;
-    font-weight: bold;
-}
+    <div class="navbar">
+        <div class="divKredit">
+          <h2>Kredit:</h2>
+          <p id="kreditCifra"></p> 
+        </div>
+    </div>
+    
+
+    <main>
+        <form>
+            <div class="mainContainer1">
+            
+                <div class="unosParametara">
+                    <h3>Unos konzole</h3>
+                    <input type="text" id="upisKonzole" value="001" placeholder="001 - 008" required>
+                </div>
+                <div class="unosParametara">
+                    <h3>Broj igre</h3>
+                    <input type="text" class="idIgre" readonly>
+                </div>
+                <div class="unosParametara">
+                    <h3>Pozicija</h3>
+                    <input type="text" class="upisPozicije" value="" required>
+                </div>
+                <div class="unosParametara">
+                    <h3>Ulog</h3>
+                    <input type="text" class="upisUloga" value="" required>
+                </div>
+
+                <button id="sibniBtn" type="submit">Uloži</button>
+            
+            </div>
+
+            <div class="mainContainer2">
+                <div class="ispisParametara">
+                    <h3>Ulog:</h3>
+                    <p class="ispisi" id="ispisUloga"></p>
+                </div>
+                <div class="ispisParametara">
+                    <h3>Pozicija:</h3>
+                    <p class="ispisi" id="IspisPozicija"></p>
+                </div>
+
+                <br></br>
+                <br></br>
+
+                <div class="ispisParametara"> 
+                    <h3 class="rezultat">Izvučeno:</h3>
+                    <p class="ispisi" id="rezultat"></p>
+                </div>
+                <div class="ispisParametara">
+                    <h3 class="dobitak">Dobitak:</h3>
+                    <p class="ispisi" id="dobitak"></p>
+                </div>
+
+                <div
+
+            </div>
+        </form>
+    </main>
+
+    <script src="js.js"></script>
+</body>
+</html>
