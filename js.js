@@ -14,12 +14,15 @@ request.onload = ()=> {
   }
 }
 */
+var kredit = document.getElementById("kreditCifra").innerHTML = 1000;
 
-var konzola = document.getElementById("upisKonzole").value;
+var konzola = document.getElementById("upisKonzole");
 var brojIgre = document.getElementById("idIgre");
 var pozicija = document.getElementById("upisPozicija");
 var ulog = document.getElementById("upisUloga");
 
-var ispis
+var ispisUloga = document.getElementById("ispisUloga");
+var ispisPozicija = document.getElementById("ispisPozicija");
+var izvuceniBroj = document.getElementById("rezultat");
+var dobitak = document.getElementById("dobitak") ;
 
-var kredit = document.getElementById("kreditCifra").innerHTML = 1000;
