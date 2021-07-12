@@ -26,3 +26,15 @@ var ispisPozicija = document.getElementById("ispisPozicija");
 var izvuceniBroj = document.getElementById("rezultat");
 var dobitak = document.getElementById("dobitak") ;
 
+const uloziBtn = document.getElementById("sibniBtn");
+
+function get_random_number(min, max) {
+  var randomBroj = Math.floor(Math.random() * (max - min + 1)) + min;
+  izvuceniBroj.innerHTML = randomBroj;
+}
+
+uloziBtn.addEventListener("click", function(){
+
+  get_random_number(0, 36);
+
+});
